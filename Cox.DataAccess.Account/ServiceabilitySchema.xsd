@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ServiceabilitySchema" targetNamespace="http://tempuri.org/ServiceabilitySchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ServiceabilitySchema.xsd"
+	xmlns:mstns="http://tempuri.org/ServiceabilitySchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="ServiceabilitySchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ICOMSAddresses" codegen:typedName="ICOMSAddress" codegen:typedPlural="ICOMSAddresses">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SITE_ID" type="xs:integer" minOccurs="0" codegen:typedName="SiteID" />
+							<xs:element name="COMPANY_NUMBER" type="xs:integer" minOccurs="0" codegen:typedName="CompanyNbr" />
+							<xs:element name="DIVISION_NUMBER" type="xs:integer" minOccurs="0" codegen:typedName="DivisionNbr" />
+							<xs:element name="FRANCHISE_NUMBER" type="xs:integer" minOccurs="0" codegen:typedName="FranchiseID" />
+							<xs:element name="HOUSE_NUMBER" type="xs:integer" minOccurs="0" codegen:typedName="HouseNbr" />
+							<xs:element name="ADDR_LOCATION" type="xs:string" minOccurs="0" codegen:typedName="Number" />
+							<xs:element name="FRACTION" type="xs:string" minOccurs="0" codegen:typedName="Fraction" />
+							<xs:element name="PRE_DIRECTIONAL" type="xs:string" minOccurs="0" codegen:typedName="PreDirectional" />
+							<xs:element name="STREET" type="xs:string" minOccurs="0" codegen:typedName="StreetName" />
+							<xs:element name="ADDR_POST_DIRECTIONAL" type="xs:string" minOccurs="0" codegen:typedName="PostDirectional" />
+							<xs:element name="ADDRESS_LINE_1" type="xs:string" minOccurs="0" codegen:typedName="AddressLine1" />
+							<xs:element name="ADDRESS_LINE_2" type="xs:string" minOccurs="0" codegen:typedName="AddressLine2" />
+							<xs:element name="ADDRESS_LINE_3" type="xs:string" minOccurs="0" codegen:typedName="AddressLine3" />
+							<xs:element name="ADDRESS_LINE_4" type="xs:string" minOccurs="0" codegen:typedName="AddressLine4" />
+							<xs:element name="APARTMENT" type="xs:string" minOccurs="0" codegen:typedName="Apt" />
+							<xs:element name="BUILDING" type="xs:string" minOccurs="0" codegen:typedName="Building" />
+							<xs:element name="ADDR_CITY" type="xs:string" minOccurs="0" codegen:typedName="City" />
+							<xs:element name="ADDR_STATE" type="xs:string" minOccurs="0" codegen:typedName="State" />
+							<xs:element name="ADDR_ZIP_5" type="xs:string" minOccurs="0" codegen:typedName="Zip5" />
+							<xs:element name="ADDR_ZIP_4" type="xs:string" minOccurs="0" codegen:typedName="Zip4" />
+							<xs:element name="DWELLING_TYPE" type="xs:string" minOccurs="0" codegen:typedName="DwellingType" />
+							<xs:element name="HOUSE_RESIDENT_NUMBER" type="xs:integer" minOccurs="0" codegen:typedName="HouseResidentNbr" />
+							<xs:element name="HasCustomer" type="xs:boolean" minOccurs="0" codegen:typedName="HasCustomer" />
+							<xs:element name="HasBasicCable" type="xs:boolean" minOccurs="0" codegen:typedName="HasBasicCable" />
+							<xs:element name="HasDigitalCable" type="xs:boolean" minOccurs="0" codegen:typedName="HasDigitalCable" />
+							<xs:element name="HasHSI" type="xs:boolean" minOccurs="0" codegen:typedName="HasHSI" />
+							<xs:element name="HasTelephony" type="xs:boolean" minOccurs="0" codegen:typedName="HasTelephony" />
+							<xs:element name="HasSwitchedTelephony" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HasVoipTelephony" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

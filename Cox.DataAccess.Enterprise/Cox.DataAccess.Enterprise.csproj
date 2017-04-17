@@ -1,0 +1,311 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D87AD341-0540-43DF-A624-B4EE825BA6B2}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Cox.DataAccess.Enterprise</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cox.DataAccess.Enterprise</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Cox.DataAccess.Enterprise.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Stubs|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cox.DataAccess, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Cox.Security, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>system.xml</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationGroupSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApplicationGroupSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AuthorizationUserSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AuthorizationUserSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="BroadcastMessageSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BroadcastMessageSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CarrierSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CarrierSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="FranchiseSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FranchiseSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MethodOfPaymentSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MethodOfPaymentSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteCodeSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiteCodeSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="ApplicationGroupSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationGroupSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuthorizationUserSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthorizationUserSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BroadcastMessageSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BroadcastMessageSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CarrierSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarrierSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationEnvironmentSchema.cs">
+      <DependentUpon>ConfigurationEnvironmentSchema.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfigurationEnvironmentSchema.designer.cs">
+      <DependentUpon>ConfigurationEnvironmentSchema.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DalAuthorizationUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalBroadcastMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalConfigurationEnvironment.cs" />
+    <Compile Include="DalFranchise.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalMethodOfPayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalPaymentReceipt.cs" />
+    <Compile Include="DalServiceCategory.cs" />
+    <Compile Include="DalServiceFeatureLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalSite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalSiteCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalUniqueNumber.cs" />
+    <Compile Include="DalUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FranchiseSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FranchiseSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MethodOfPaymentSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MethodOfPaymentSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCategorySchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceCategorySchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SiteCodeSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteCodeSchema.xsd</DependentUpon>
+    </Compile>
+    <None Include="ApplicationGroupSchema.xsx">
+      <DependentUpon>ApplicationGroupSchema.xsd</DependentUpon>
+    </None>
+    <None Include="AuthorizationUserSchema.xsc">
+      <DependentUpon>AuthorizationUserSchema.xsd</DependentUpon>
+    </None>
+    <None Include="AuthorizationUserSchema.xss">
+      <DependentUpon>AuthorizationUserSchema.xsd</DependentUpon>
+    </None>
+    <None Include="AuthorizationUserSchema.xsx">
+      <DependentUpon>AuthorizationUserSchema.xsd</DependentUpon>
+    </None>
+    <None Include="BroadcastMessageSchema.xsx">
+      <DependentUpon>BroadcastMessageSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CarrierSchema.xsx">
+      <DependentUpon>CarrierSchema.xsd</DependentUpon>
+    </None>
+    <None Include="ConfigurationEnvironmentSchema.xsc">
+      <DependentUpon>ConfigurationEnvironmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="ConfigurationEnvironmentSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConfigurationEnvironmentSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConfigurationEnvironmentSchema.xss">
+      <DependentUpon>ConfigurationEnvironmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="ConfigurationEnvironmentSchema.xsx">
+      <DependentUpon>ConfigurationEnvironmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="FranchiseSchema.xsx">
+      <DependentUpon>FranchiseSchema.xsd</DependentUpon>
+    </None>
+    <None Include="MethodOfPaymentSchema.xsx">
+      <DependentUpon>MethodOfPaymentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceCategorySchema.xsc">
+      <DependentUpon>ServiceCategorySchema.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceCategorySchema.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceCategorySchema.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceCategorySchema.xss">
+      <DependentUpon>ServiceCategorySchema.xsd</DependentUpon>
+    </None>
+    <None Include="SiteCodeSchema.xsx">
+      <DependentUpon>SiteCodeSchema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TDLELEMENTTYPE="DataAccess" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

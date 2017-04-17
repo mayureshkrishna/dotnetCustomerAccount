@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MethodOfPaymentSchema" targetNamespace="http://tempuri.org/MethodOfPaymentSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MethodOfPaymentSchema.xsd"
+	xmlns:mstns="http://tempuri.org/MethodOfPaymentSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="MethodOfPaymentSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblMethodOfPaymentMap" codegen:typedName="MethodOfPayment" codegen:typedPlural="MethodsOfPayment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mopId" codegen:typedName="Id" type="xs:int" />
+							<xs:element name="mopPaymentTypeId" codegen:typedName="PaymentTypeId" type="xs:int" minOccurs="0" />
+							<xs:element name="mopApplicationGroupId" codegen:typedName="ApplicationGroupId" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="mopMop" codegen:typedName="Mop" type="xs:int" minOccurs="0" />
+							<xs:element name="mopDescription" codegen:typedName="Description" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tblApplicationGroup">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="grpId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="grpName" type="xs:string" />
+							<xs:element name="grpCredentialId" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tblPaymentType">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="paytpID" type="xs:int" />
+							<xs:element name="paytpName" type="xs:string" />
+							<xs:element name="paytpDescription" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="MethodOfPaymentSchemaKey1">
+			<xs:selector xpath=".//mstns:tblMethodOfPaymentMap" />
+			<xs:field xpath="mstns:mopPaymentTypeId" />
+			<xs:field xpath="mstns:mopApplicationGroupId" />
+		</xs:unique>
+		<xs:unique name="MethodOfPaymentSchemaKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblApplicationGroup" />
+			<xs:field xpath="mstns:grpId" />
+		</xs:unique>
+		<xs:unique name="MethodOfPaymentSchemaKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblPaymentType" />
+			<xs:field xpath="mstns:paytpID" />
+		</xs:unique>
+		<xs:key name="key1">
+			<xs:selector xpath=".//mstns:tblApplicationGroup" />
+			<xs:field xpath="mstns:grpId" />
+		</xs:key>
+		<xs:keyref name="tblApplicationGrouptblMethodOfPaymentMap" refer="key1">
+			<xs:selector xpath=".//mstns:tblMethodOfPaymentMap" />
+			<xs:field xpath="mstns:mopApplicationGroupId" />
+		</xs:keyref>
+		<xs:key name="key2">
+			<xs:selector xpath=".//mstns:tblPaymentType" />
+			<xs:field xpath="mstns:paytpID" />
+		</xs:key>
+		<xs:keyref name="tblPaymentTypetblMethodOfPaymentMap" refer="key2">
+			<xs:selector xpath=".//mstns:tblMethodOfPaymentMap" />
+			<xs:field xpath="mstns:mopPaymentTypeId" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

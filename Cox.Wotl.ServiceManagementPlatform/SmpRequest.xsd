@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ITVRequest">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="GetEmailInfo2">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IcomsID" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="GetEmailProperties">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EmailAddress" type="xs:string"/>
+							<xs:element name="PinNumber" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ProvisionPin">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EmailAddress" type="xs:string"/>
+							<xs:element name="EmailPassword" type="xs:string"/>
+							<xs:element name="PinNumber" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

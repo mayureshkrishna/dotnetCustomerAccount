@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConfigurationEnvironmentSchema" targetNamespace="http://tempuri.org/ConfigurationEnvironmentSchema.xsd" xmlns:mstns="http://tempuri.org/ConfigurationEnvironmentSchema.xsd" xmlns="http://tempuri.org/ConfigurationEnvironmentSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConfigurationEnvironmentSchema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ConfigurationEnvironmentSchema" msprop:Generator_DataSetName="ConfigurationEnvironmentSchema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConfigurationEnvironment" msprop:Generator_UserTableName="ConfigurationEnvironment" msprop:Generator_RowDeletedName="ConfigurationEnvironmentRowDeleted" msprop:Generator_RowChangedName="ConfigurationEnvironmentRowChanged" msprop:Generator_RowClassName="ConfigurationEnvironmentRow" msprop:Generator_RowChangingName="ConfigurationEnvironmentRowChanging" msprop:Generator_RowEvArgName="ConfigurationEnvironmentRowChangeEvent" msprop:Generator_RowEvHandlerName="ConfigurationEnvironmentRowChangeEventHandler" msprop:Generator_TableClassName="ConfigurationEnvironmentDataTable" msprop:Generator_TableVarName="tableConfigurationEnvironment" msprop:Generator_RowDeletingName="ConfigurationEnvironmentRowDeleting" msprop:Generator_TablePropName="ConfigurationEnvironment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConfigurationEnvironmentId" msprop:Generator_UserColumnName="ConfigurationEnvironmentId" msprop:Generator_ColumnPropNameInRow="ConfigurationEnvironmentId" msprop:Generator_ColumnVarNameInTable="columnConfigurationEnvironmentId" msprop:Generator_ColumnPropNameInTable="ConfigurationEnvironmentIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ChannelId" msprop:Generator_UserColumnName="ChannelId" msprop:Generator_ColumnPropNameInRow="ChannelId" msprop:Generator_ColumnVarNameInTable="columnChannelId" msprop:Generator_ColumnPropNameInTable="ChannelIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SiteId" msprop:Generator_UserColumnName="SiteId" msprop:Generator_ColumnPropNameInRow="SiteId" msprop:Generator_ColumnVarNameInTable="columnSiteId" msprop:Generator_ColumnPropNameInTable="SiteIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuthorizationUserId" msprop:Generator_UserColumnName="AuthorizationUserId" msprop:Generator_ColumnPropNameInRow="AuthorizationUserId" msprop:Generator_ColumnVarNameInTable="columnAuthorizationUserId" msprop:Generator_ColumnPropNameInTable="AuthorizationUserIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConfigurationHierarchy" msprop:Generator_UserTableName="ConfigurationHierarchy" msprop:Generator_RowDeletedName="ConfigurationHierarchyRowDeleted" msprop:Generator_TableClassName="ConfigurationHierarchyDataTable" msprop:Generator_RowChangedName="ConfigurationHierarchyRowChanged" msprop:Generator_RowClassName="ConfigurationHierarchyRow" msprop:Generator_RowChangingName="ConfigurationHierarchyRowChanging" msprop:Generator_RowEvArgName="ConfigurationHierarchyRowChangeEvent" msprop:Generator_RowEvHandlerName="ConfigurationHierarchyRowChangeEventHandler" msprop:Generator_TablePropName="ConfigurationHierarchy" msprop:Generator_TableVarName="tableConfigurationHierarchy" msprop:Generator_RowDeletingName="ConfigurationHierarchyRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConfigurationHierarchyId" msprop:Generator_UserColumnName="ConfigurationHierarchyId" msprop:Generator_ColumnPropNameInRow="ConfigurationHierarchyId" msprop:Generator_ColumnVarNameInTable="columnConfigurationHierarchyId" msprop:Generator_ColumnPropNameInTable="ConfigurationHierarchyIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ConfigurationEnvironmentId" msprop:Generator_UserColumnName="ConfigurationEnvironmentId" msprop:Generator_ColumnPropNameInRow="ConfigurationEnvironmentId" msprop:Generator_ColumnVarNameInTable="columnConfigurationEnvironmentId" msprop:Generator_ColumnPropNameInTable="ConfigurationEnvironmentIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="HierarchyId" msprop:Generator_UserColumnName="HierarchyId" msprop:Generator_ColumnPropNameInRow="HierarchyId" msprop:Generator_ColumnVarNameInTable="columnHierarchyId" msprop:Generator_ColumnPropNameInTable="HierarchyIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="HierarchyTypeId" msprop:Generator_UserColumnName="HierarchyTypeId" msprop:Generator_ColumnPropNameInRow="HierarchyTypeId" msprop:Generator_ColumnVarNameInTable="columnHierarchyTypeId" msprop:Generator_ColumnPropNameInTable="HierarchyTypeIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AffiliateId" msprop:Generator_UserColumnName="AffiliateId" msprop:Generator_ColumnPropNameInRow="AffiliateId" msprop:Generator_ColumnVarNameInTable="columnAffiliateId" msprop:Generator_ColumnPropNameInTable="AffiliateIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsDefault" msprop:Generator_UserColumnName="IsDefault" msprop:Generator_ColumnPropNameInRow="IsDefault" msprop:Generator_ColumnVarNameInTable="columnIsDefault" msprop:Generator_ColumnPropNameInTable="IsDefaultColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

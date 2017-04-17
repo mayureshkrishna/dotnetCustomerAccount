@@ -1,0 +1,332 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07A0A001-09DD-4F21-B360-E296C4D952C5}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Cox.DataAccess.Account</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cox.DataAccess.Account</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Cox.DataAccess.Account.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Stubs|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cox.DataAccess">
+      <Name>Cox.DataAccess</Name>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Cox.Web.Exceptions">
+      <Name>Cox.Web.Exceptions</Name>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.Web.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement">
+      <Name>Microsoft.ApplicationBlocks.ExceptionManagement</Name>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerAccountSchema.cs">
+      <DependentUpon>CustomerAccountSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAccountSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerAccountSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetailsSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDetailsSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DalAccount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalCollections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalCustomerDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalDetailedWorkOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalEquipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalIcomsWorkOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalInstallation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalServiceability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DalTelephonyDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetailedWorkOrderSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetailedWorkOrderSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IcomsWorkOrderSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IcomsWorkOrderSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InstallationSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstallationSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceabilitySchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceabilitySchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TelephonySchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelephonySchema.xsd</DependentUpon>
+    </Compile>
+    <Content Include="CustomerAccountSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerAccountSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CustomerDetailsSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDetailsSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DetailedWorkOrderSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetailedWorkOrderSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EquipmentSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <CustomToolNamespace>Cox.DataAccess.Account</CustomToolNamespace>
+      <LastGenOutput>EquipmentSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="IcomsWorkOrderSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <CustomToolNamespace>Cox.DataAccess.Account</CustomToolNamespace>
+      <LastGenOutput>IcomsWorkOrderSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="InstallationSchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <CustomToolNamespace>Cox.DataAccess.Account</CustomToolNamespace>
+      <LastGenOutput>InstallationSchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ServiceabilitySchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceabilitySchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TelephonySchema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TelephonySchema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="CustomerAccountSchema.xsc">
+      <DependentUpon>CustomerAccountSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerAccountSchema.xss">
+      <DependentUpon>CustomerAccountSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerAccountSchema.xsx">
+      <DependentUpon>CustomerAccountSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDetailsSchema.xsc">
+      <DependentUpon>CustomerDetailsSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDetailsSchema.xss">
+      <DependentUpon>CustomerDetailsSchema.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDetailsSchema.xsx">
+      <DependentUpon>CustomerDetailsSchema.xsd</DependentUpon>
+    </None>
+    <None Include="DetailedWorkOrderSchema.xsc">
+      <DependentUpon>DetailedWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="DetailedWorkOrderSchema.xss">
+      <DependentUpon>DetailedWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="DetailedWorkOrderSchema.xsx">
+      <DependentUpon>DetailedWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="EquipmentSchema.xsc">
+      <DependentUpon>EquipmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="EquipmentSchema.xss">
+      <DependentUpon>EquipmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="EquipmentSchema.xsx">
+      <DependentUpon>EquipmentSchema.xsd</DependentUpon>
+    </None>
+    <None Include="IcomsWorkOrderSchema.xsc">
+      <DependentUpon>IcomsWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="IcomsWorkOrderSchema.xss">
+      <DependentUpon>IcomsWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="IcomsWorkOrderSchema.xsx">
+      <DependentUpon>IcomsWorkOrderSchema.xsd</DependentUpon>
+    </None>
+    <None Include="InstallationSchema.xsc">
+      <DependentUpon>InstallationSchema.xsd</DependentUpon>
+    </None>
+    <None Include="InstallationSchema.xss">
+      <DependentUpon>InstallationSchema.xsd</DependentUpon>
+    </None>
+    <None Include="InstallationSchema.xsx">
+      <DependentUpon>InstallationSchema.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceabilitySchema.xsc">
+      <DependentUpon>ServiceabilitySchema.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceabilitySchema.xss">
+      <DependentUpon>ServiceabilitySchema.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceabilitySchema.xsx">
+      <DependentUpon>ServiceabilitySchema.xsd</DependentUpon>
+    </None>
+    <None Include="TelephonySchema.xsc">
+      <DependentUpon>TelephonySchema.xsd</DependentUpon>
+    </None>
+    <None Include="TelephonySchema.xss">
+      <DependentUpon>TelephonySchema.xsd</DependentUpon>
+    </None>
+    <None Include="TelephonySchema.xsx">
+      <DependentUpon>TelephonySchema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ServiceBundleSchema" targetNamespace="http://tempuri.org/ServiceBundleSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ServiceBundleSchema.xsd"
+	xmlns:mstns="http://tempuri.org/ServiceBundleSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="ServiceBundleSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ServiceBundle" codegen:typedName="ServiceBundle" codegen:typedPlural="ServiceBundles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="K2CVIK" codegen:typedName="ServiceBundleName" type="xs:string" />
+							<xs:element name="E7CEK6" codegen:typedName="ServiceCategoryCode" type="xs:string" />
+							<xs:element name="K2SVCD" codegen:typedName="ServiceCode" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

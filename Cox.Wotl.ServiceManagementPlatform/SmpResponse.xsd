@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ITVResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ITVReturnCode" type="xs:integer"/>
+				<xs:element name="ITVReturnMsg" type="xs:string"/>
+				<xs:choice minOccurs="0">
+					<xs:element name="GetEmailInfo2">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ReturnCode" type="xs:integer"/>
+								<xs:element name="ReturnMsg" type="xs:string"/>
+								<xs:element name="SuspendFlag" type="xs:boolean"/>
+								<xs:element name="EmailInfo2" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="EmailAddress" type="xs:string"/>
+											<xs:element name="ParentFlag" type="xs:boolean"/>
+											<xs:element name="PinExists" type="xs:boolean"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="GetEmailProperties">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ReturnCode" type="xs:integer"/>
+								<xs:element name="ReturnMsg" type="xs:string"/>
+								<xs:element name="EmailAddress" type="xs:string"/>
+								<xs:element name="PinNumber" type="xs:string"/>
+								<xs:element name="EmailPassword" type="xs:string"/>
+								<xs:element name="POPServer" type="xs:string"/>
+								<xs:element name="SMTPServer" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ProvisionPin">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ReturnCode" type="xs:integer"/>
+								<xs:element name="ReturnMsg" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

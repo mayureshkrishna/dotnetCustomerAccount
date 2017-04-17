@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="BroadcastMessageSchema" targetNamespace="http://tempuri.org/BroadcastMessageSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/BroadcastMessageSchema.xsd"
+	xmlns:mstns="http://tempuri.org/BroadcastMessageSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="BroadcastMessageSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="BroadcastMessage">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BroadcastMessageId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ApplicationTypeId" type="xs:int" />
+							<xs:element name="ChannelId"  type="xs:int" />
+							<xs:element name="AuthorizationUserId" type="xs:int" />
+							<xs:element name="StartDate" nillable="true" type="xs:dateTime" />
+							<xs:element name="EndDate" nillable="true" type="xs:dateTime" />
+							<xs:element name="CreateDate" type="xs:dateTime" />
+							<xs:element name="Value" type="xs:string" />
+							<xs:element name="Login" type="xs:string" />
+							<xs:element name="FirstName" type="xs:string" />
+							<xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+							<xs:element name="LastName" type="xs:string" />
+							<xs:element name="EmailAddress" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="BroadcastMessageSchemaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BroadcastMessage" />
+			<xs:field xpath="mstns:BroadcastMessageId" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

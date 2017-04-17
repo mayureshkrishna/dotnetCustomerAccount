@@ -1,0 +1,143 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF9E1AAC-27A6-4885-8B5B-A4D2BF568C17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cox.BusinessLogic.CustomerAccount</RootNamespace>
+    <AssemblyName>Cox.BusinessLogic.CustomerAccount</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cox.ActivityLog, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.ActivityLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Cox.DataAccess, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Cox.Validation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cox.Web.Exceptions, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Cox.Web.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>\\corp.cox.com\cci-dfs\CustApps\sharedlibs\dotnet\2.0\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditCheckCode.cs" />
+    <Compile Include="BlockPaymentSetting.cs" />
+    <Compile Include="CableServiceStatus.cs" />
+    <Compile Include="CustomerAccountInfo.cs" />
+    <Compile Include="CustomerAccountInquire.cs" />
+    <Compile Include="CustomerAccountManager.cs" />
+    <Compile Include="CustomerAccountLogEntry.cs" />
+    <Compile Include="HomeSecurityStatus.cs" />
+    <Compile Include="TelephoneServiceStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cox.BusinessObjects\Cox.BusinessObjects.csproj">
+      <Project>{01FFEF19-558C-46A7-B9F1-F41440E445C0}</Project>
+      <Name>Cox.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.BusinessObjects.CustomerAccount\Cox.BusinessObjects.CustomerAccount.csproj">
+      <Project>{E3BD590C-1DBF-4ED8-BD16-403D80ADED18}</Project>
+      <Name>Cox.BusinessObjects.CustomerAccount</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.BusinessObjects.CustomerBilling\Cox.BusinessObjects.CustomerBilling.csproj">
+      <Project>{09D3CCE9-7FC1-4BBE-9CCF-BBDE1710894A}</Project>
+      <Name>Cox.BusinessObjects.CustomerBilling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.Account\Cox.DataAccess.Account.csproj">
+      <Project>{07A0A001-09DD-4F21-B360-E296C4D952C5}</Project>
+      <Name>Cox.DataAccess.Account</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.CustomerAccountCCRM\Cox.DataAccess.CustomerAccountCCRM.csproj">
+      <Project>{2B51DBC3-FA33-4F42-845B-0E9CFA4C9F9F}</Project>
+      <Name>Cox.DataAccess.CustomerAccountCCRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.House\Cox.DataAccess.House.csproj">
+      <Project>{32A5093A-0DE3-4EEF-9407-B0D4BCE4C377}</Project>
+      <Name>Cox.DataAccess.House</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.CustomerAccount\Cox.DataAccess.CustomerAccount.csproj">
+      <Project>{9E00558F-08F3-4B0F-8FD8-4CA85DC1EC5F}</Project>
+      <Name>Cox.DataAccess.CustomerAccount</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.Enterprise\Cox.DataAccess.Enterprise.csproj">
+      <Project>{D87AD341-0540-43DF-A624-B4EE825BA6B2}</Project>
+      <Name>Cox.DataAccess.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.DataAccess.House\Cox.DataAccess.House.csproj">
+      <Project>{32A5093A-0DE3-4EEF-9407-B0D4BCE4C377}</Project>
+      <Name>Cox.DataAccess.House</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.ServiceAgent.ConnectionManager\Cox.ServiceAgent.ConnectionManager.csproj">
+      <Project>{4F263093-E436-4D90-85E9-87E7C413E1FF}</Project>
+      <Name>Cox.ServiceAgent.ConnectionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.Wotl.ServiceManagementPlatform\Cox.Wotl.ServiceManagementPlatform.csproj">
+      <Project>{362BAA68-A0BE-4C3E-9A76-D3B1C6424A0D}</Project>
+      <Name>Cox.Wotl.ServiceManagementPlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.BusinessLogic.ConnectionManager\Cox.BusinessLogic.ConnectionManager.csproj">
+      <Project>{D1616F36-0317-4F6A-A1E2-D8494AB7BC08}</Project>
+      <Name>Cox.BusinessLogic.ConnectionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.BusinessLogic\Cox.BusinessLogic.csproj">
+      <Project>{DDE46F4F-69A0-4B7B-936D-43F85A10401A}</Project>
+      <Name>Cox.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cox.BusinessLogic.CustomerBilling\Cox.BusinessLogic.CustomerBilling.csproj">
+      <Project>{573C614F-0D25-4123-A0F8-1B8B4F0AAE0D}</Project>
+      <Name>Cox.BusinessLogic.CustomerBilling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

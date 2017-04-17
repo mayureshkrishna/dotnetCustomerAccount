@@ -1,0 +1,44 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Application Name: CustomerAccount2
+Release Number: %BUILD_NUM%
+Primary Developer: Sindhu B P
+Project Manager: Terry Kennedy
+Primary CM: Idan
+
+DEVLIB/RELEASELIB Location(s): %BUILD_APPLICATION_PATH%
+
+Steps are to be run in order.   
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Special Notes:
+
+- Please ensure that the deployment is done in the newly hosted Cox.Web.Services.CustomerAccount2 webservice.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dependancies:
+
+Database
+
+NA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Release Notes:
+
+- Deployment of CustomerAccount2 webservice to remove PCI related error logging
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WEBSITE SETUP:
+
+Note: Require update permission on server
+
+1. Copy CustomerAccount2_Build_%BUILD_NUM%.bat on Web server.
+
+2. Run CustomerAccount2_Build_%BUILD_NUM%.bat
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WEBSITE ROLLBACK:
+
+1. Delete all files from physical location C:\InetPub\webservices.corp.cox.com\Cox.Web.Services.CustomerAccount2.
+2. Copy files from backup folders (C:\BAK\Cox.Web.Services.Profile2\{Build Number} and past again in physical location (C:\InetPub\webservices.corp.cox.com\Cox.Web.Services.CustomerAccount2) of Web Service.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://tempuri.org/FranchiseSchema.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" id="FranchiseSchema" xmlns="http://tempuri.org/FranchiseSchema.xsd"
+	xmlns:mstns="http://tempuri.org/FranchiseSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="FranchiseSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Franchise" codegen:typedName="Franchise" codegen:typedPlural="Franchises">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FranchiseId" type="xs:int" minOccurs="0" codegen:typedName="FranchiseId" />
+							<xs:element name="FranchiseGroupId" type="xs:int" minOccurs="0" codegen:typedName="FranchiseGroupId" />
+							<xs:element name="FranchiseGroupName" type="xs:string" minOccurs="0" codegen:typedName="FranchiseGroupName" />
+							<xs:element name="SiteId" type="xs:int" minOccurs="0" codegen:typedName="SiteId" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ServiceCategorySchema" targetNamespace="http://tempuri.org/ServiceCategorySchema.xsd" xmlns:mstns="http://tempuri.org/ServiceCategorySchema.xsd" xmlns="http://tempuri.org/ServiceCategorySchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ServiceCategorySchema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ServiceCategorySchema" msprop:Generator_DataSetName="ServiceCategorySchema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ServiceCategory" msprop:Generator_UserTableName="ServiceCategory" msprop:Generator_RowDeletedName="ServiceCategoryRowDeleted" msprop:Generator_RowChangedName="ServiceCategoryRowChanged" msprop:Generator_RowClassName="ServiceCategoryRow" msprop:Generator_RowChangingName="ServiceCategoryRowChanging" msprop:Generator_RowEvArgName="ServiceCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="ServiceCategoryRowChangeEventHandler" msprop:Generator_TableClassName="ServiceCategoryDataTable" msprop:Generator_TableVarName="tableServiceCategory" msprop:Generator_RowDeletingName="ServiceCategoryRowDeleting" msprop:Generator_TablePropName="ServiceCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceCategoryCode" msprop:Generator_UserColumnName="ServiceCategoryCode" msprop:Generator_ColumnVarNameInTable="columnServiceCategoryCode" msprop:Generator_ColumnPropNameInRow="ServiceCategoryCode" msprop:Generator_ColumnPropNameInTable="ServiceCategoryCodeColumn" type="xs:string" />
+              <xs:element name="ServiceCategoryDesc" msprop:Generator_UserColumnName="ServiceCategoryDesc" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ServiceCategoryDesc" msprop:Generator_ColumnPropNameInTable="ServiceCategoryDescColumn" msprop:Generator_ColumnVarNameInTable="columnServiceCategoryDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServiceCategory" />
+      <xs:field xpath="mstns:ServiceCategoryCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

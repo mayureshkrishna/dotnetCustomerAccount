@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://tempuri.org/CarrierSchema.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" id="CarrierSchema" xmlns="http://tempuri.org/CarrierSchema.xsd"
+	xmlns:mstns="http://tempuri.org/CarrierSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="CarrierSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Carrier" codegen:typedName="Carrier" codegen:typedPlural="Carriers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CarrierId" type="xs:string" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

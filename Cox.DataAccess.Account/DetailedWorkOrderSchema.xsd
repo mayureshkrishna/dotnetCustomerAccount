@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DetailedWorkOrderSchema" targetNamespace="http://tempuri.org/DetailedWorkOrderSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DetailedWorkOrderSchema.xsd"
+	xmlns:mstns="http://tempuri.org/DetailedWorkOrderSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DetailedWorkOrderSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="WorkOrder">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="WORK_ORDER_NUMBER" type="xs:int" />
+							<xs:element name="ACCOUNT_NUMBER" type="xs:int" minOccurs="0" />
+							<xs:element name="DATE_ENTERED" type="xs:int" minOccurs="0" />
+							<xs:element name="SALESMAN_NUMBER" type="xs:int" minOccurs="0" />
+							<xs:element name="WO_COMMENT_LINE_01" type="xs:string" minOccurs="0" />
+							<xs:element name="WO_COMMENT_LINE_02" type="xs:string" minOccurs="0" />
+							<xs:element name="WO_COMMENT_LINE_03" type="xs:string" minOccurs="0" />
+							<xs:element name="SALES_REASON" type="xs:string" minOccurs="0" />
+							<xs:element name="Q_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="PROBLEM_CODE_01" type="xs:string" minOccurs="0" />
+							<xs:element name="PROBLEM_CODE_02" type="xs:string" minOccurs="0" />
+							<xs:element name="PROBLEM_CODE_03" type="xs:string" minOccurs="0" />
+							<xs:element name="PROBLEM_CODE_04" type="xs:string" minOccurs="0" />
+							<xs:element name="PROBLEM_CODE_05" type="xs:string" minOccurs="0" />
+							<xs:element name="SCHEDULE_DATE" type="xs:int" minOccurs="0" />
+							<xs:element name="TIME_SLOT" type="xs:string" minOccurs="0" />
+							<xs:element name="STAGE_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="CAMPAIGN_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="FIRST_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="LAST_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="MONTHLY_AMOUNT" type="xs:double" minOccurs="0" />
+							<xs:element name="ADDR_LOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="STREET" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR_CITY" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR_STATE" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDR_ZIP_5" type="xs:string" minOccurs="0" />
+							<xs:element name="APARTMENT" type="xs:string" minOccurs="0" />
+							<xs:element name="DWELLING_TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="SIGNAL_ACCESS_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="UNSERVICEABLE_ADDRESS" type="xs:string" minOccurs="0" />
+							<xs:element name="REPLACE_DROP_DATE" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="WorkOrderDetail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="WORK_ORDER_NUMBER" type="xs:int" />
+							<xs:element name="SERVICE_CODE" type="xs:string" />
+							<xs:element name="SHORT_DESCRIPTION" type="xs:string" />
+							<xs:element name="LONG_DESCRIPTION" type="xs:string" />
+							<xs:element name="CATEGORY" type="xs:string" minOccurs="0" />
+							<xs:element name="OLD_RATE" type="xs:double" minOccurs="0" />
+							<xs:element name="NEW_RATE" type="xs:double" minOccurs="0" />
+							<xs:element name="WORK_ORDER_OCCURRENCE" type="xs:int" />
+							<xs:element name="FROM_QUANTITY" type="xs:int" minOccurs="0" />
+							<xs:element name="TO_QUANTITY" type="xs:int" minOccurs="0" />
+							<xs:element name="CAMPAIGN_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="EMPLOYEE_NUMBER" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

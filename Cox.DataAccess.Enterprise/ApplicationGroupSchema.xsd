@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ApplicationGroupSchema" targetNamespace="http://tempuri.org/ApplicationGroupSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ApplicationGroupSchema.xsd"
+	xmlns:mstns="http://tempuri.org/ApplicationGroupSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="ApplicationGroupSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblApplicationGroup" codegen:typedName="ApplicationGroup" codegen:typedPlural="ApplicationGroups">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="grpId" codegen:typedName="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="grpName" codegen:typedName="Name" type="xs:string" />
+							<xs:element name="grpCredentialId" codegen:typedName="CredentialId" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tblIcomsCredential" codegen:typedName="IcomsCredential" codegen:typedPlural="IcomsCredentials">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="icId" codegen:typedName="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="icUsername" codegen:typedName="Username" type="xs:string" />
+							<xs:element name="icPassword" codegen:typedName="Password" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tblUser" codegen:typedName="User" codegen:typedPlural="Users">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="usrId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="usrUserName" type="xs:string" />
+							<xs:element name="usrGroupId" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ApplicationGroupSchemaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblApplicationGroup" />
+			<xs:field xpath="mstns:grpId" />
+		</xs:unique>
+		<xs:unique name="ApplicationGroupSchemaKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblIcomsCredential" />
+			<xs:field xpath="mstns:icId" />
+		</xs:unique>
+		<xs:unique name="ApplicationGroupSchemaKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblUser" />
+			<xs:field xpath="mstns:usrId" />
+		</xs:unique>
+		<xs:keyref name="tblApplicationGrouptblUser" refer="ApplicationGroupSchemaKey1" msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:tblUser" />
+			<xs:field xpath="mstns:usrGroupId" />
+		</xs:keyref>
+		<xs:keyref name="tblIcomsCredentialtblApplicationGroup" refer="ApplicationGroupSchemaKey2"
+			msdata:ConstraintOnly="true">
+			<xs:selector xpath=".//mstns:tblApplicationGroup" />
+			<xs:field xpath="mstns:grpCredentialId" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

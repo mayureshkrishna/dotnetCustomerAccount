@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="UserSettingSchema" targetNamespace="http://tempuri.org/UserSettingSchema.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/UserSettingSchema.xsd"
+	xmlns:mstns="http://tempuri.org/UserSettingSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="UserSettingSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="UserSetting" codegen:typedName="UserSetting" codegen:typedPlural="UserSettings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UserSettingDefinitionId" type="xs:int" minOccurs="0" codegen:typedName="UserSettingDefinitionId" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" codegen:typedName="Name" />
+							<xs:element name="ValueTypeName" type="xs:string" minOccurs="0" codegen:typedName="ValueTypeName" />
+							<xs:element name="ApplicationTypeId" type="xs:int" minOccurs="0" codegen:typedName="ApplicationTypeId" />
+							<xs:element name="UserId" type="xs:int" minOccurs="0" codegen:typedName="UserId" />
+							<xs:element name="Login" type="xs:string" minOccurs="0" codegen:typedName="Login" />
+							<xs:element name="Value" type="xs:string" minOccurs="0" codegen:typedName="Value" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="SiteCodeSchema" targetNamespace="http://tempuri.org/SiteCodeSchema.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/SiteCodeSchema.xsd" xmlns:mstns="http://tempuri.org/SiteCodeSchema.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	xmlns:codegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="SiteCodeSchema" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblCompanyDivision" codegen:typedName="CompanyDivisionSite" codegen:typedPlural="CompanyDivisionSites">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cpdvSiteId" codegen:typedName="SiteId" type="xs:int" />
+							<xs:element name="cpdvCompanyNumber" codegen:typedName="CompanyNumber" type="xs:int" />
+							<xs:element name="cpdvDivisionNumber" codegen:typedName="DivisionNumber" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tblSite" codegen:typedName="CoxSite" codegen:typedPlural="CoxSites">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="stId" codegen:typedName="SiteId" type="xs:int" />
+							<xs:element name="stCode" codegen:typedName="SiteCode" type="xs:string" />
+							<xs:element name="stDescription" codegen:typedName="SiteDescription" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="tblCompanyDivisionKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblCompanyDivision" />
+			<xs:field xpath="mstns:cpdvSiteId" />
+			<xs:field xpath="mstns:cpdvCompanyNumber" />
+			<xs:field xpath="mstns:cpdvDivisionNumber" />
+		</xs:unique>
+		<xs:unique name="tblSiteKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblSite" />
+			<xs:field xpath="mstns:stId" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

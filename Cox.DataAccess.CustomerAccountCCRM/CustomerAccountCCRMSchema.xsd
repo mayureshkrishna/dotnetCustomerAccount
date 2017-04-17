@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CustomerAccountCCRMSchema" targetNamespace="http://tempuri.org/CustomerAccountCCRMSchema.xsd" xmlns:mstns="http://tempuri.org/CustomerAccountCCRMSchema.xsd" xmlns="http://tempuri.org/CustomerAccountCCRMSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CustomerAccountCCRMSchema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CustomerAccountCCRMSchema" msprop:Generator_DataSetName="CustomerAccountCCRMSchema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerAccountCCRM" msprop:Generator_UserTableName="CustomerAccountCCRM" msprop:Generator_RowDeletedName="CustomerAccountCCRMRowDeleted" msprop:Generator_RowChangedName="CustomerAccountCCRMRowChanged" msprop:Generator_RowClassName="CustomerAccountCCRMRow" msprop:Generator_RowChangingName="CustomerAccountCCRMRowChanging" msprop:Generator_RowEvArgName="CustomerAccountCCRMRowChangeEvent" msprop:Generator_RowEvHandlerName="CustomerAccountCCRMRowChangeEventHandler" msprop:Generator_TableClassName="CustomerAccountCCRMDataTable" msprop:Generator_TableVarName="tableCustomerAccountCCRM" msprop:Generator_RowDeletingName="CustomerAccountCCRMRowDeleting" msprop:Generator_TablePropName="CustomerAccountCCRM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Site_Id" msprop:Generator_UserColumnName="Site_Id" msprop:Generator_ColumnPropNameInRow="Site_Id" msprop:Generator_ColumnVarNameInTable="columnSite_Id" msprop:Generator_ColumnPropNameInTable="Site_IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Account_Nbr" msprop:Generator_UserColumnName="Account_Nbr" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Account_Nbr" msprop:Generator_ColumnPropNameInTable="Account_NbrColumn" msprop:Generator_ColumnVarNameInTable="columnAccount_Nbr" type="xs:string" minOccurs="0" />
+              <xs:element name="Cust_Value_Segmentation" msprop:Generator_UserColumnName="Cust_Value_Segmentation" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Cust_Value_Segmentation" msprop:Generator_ColumnPropNameInTable="Cust_Value_SegmentationColumn" msprop:Generator_ColumnVarNameInTable="columnCust_Value_Segmentation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

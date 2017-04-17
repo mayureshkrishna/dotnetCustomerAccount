@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AuthorizationUserSchema" targetNamespace="http://tempuri.org/AuthorizationUserSchema.xsd" xmlns:mstns="http://tempuri.org/AuthorizationUserSchema.xsd" xmlns="http://tempuri.org/AuthorizationUserSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AuthorizationUserSchema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AuthorizationUserSchema" msprop:Generator_DataSetName="AuthorizationUserSchema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AuthorizationUser" msprop:Generator_UserTableName="AuthorizationUser" msprop:Generator_RowDeletedName="AuthorizationUserRowDeleted" msprop:Generator_RowChangedName="AuthorizationUserRowChanged" msprop:Generator_RowClassName="AuthorizationUserRow" msprop:Generator_RowChangingName="AuthorizationUserRowChanging" msprop:Generator_RowEvArgName="AuthorizationUserRowChangeEvent" msprop:Generator_RowEvHandlerName="AuthorizationUserRowChangeEventHandler" msprop:Generator_TableClassName="AuthorizationUserDataTable" msprop:Generator_TableVarName="tableAuthorizationUser" msprop:Generator_RowDeletingName="AuthorizationUserRowDeleting" msprop:Generator_TablePropName="AuthorizationUser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AuthorizationUserId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AuthorizationUserId" msprop:Generator_ColumnVarNameInTable="columnAuthorizationUserId" msprop:Generator_ColumnPropNameInRow="AuthorizationUserId" msprop:Generator_ColumnPropNameInTable="AuthorizationUserIdColumn" type="xs:int" />
+              <xs:element name="Login" msprop:Generator_UserColumnName="Login" msprop:Generator_ColumnVarNameInTable="columnLogin" msprop:Generator_ColumnPropNameInRow="Login" msprop:Generator_ColumnPropNameInTable="LoginColumn" type="xs:string" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" type="xs:string" />
+              <xs:element name="MiddleName" msprop:Generator_UserColumnName="MiddleName" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" type="xs:string" />
+              <xs:element name="EmailAddress" msprop:Generator_UserColumnName="EmailAddress" msprop:Generator_ColumnVarNameInTable="columnEmailAddress" msprop:Generator_ColumnPropNameInRow="EmailAddress" msprop:Generator_ColumnPropNameInTable="EmailAddressColumn" type="xs:string" />
+              <xs:element name="IsActive" msprop:Generator_UserColumnName="IsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusinessUnit" msprop:Generator_UserTableName="BusinessUnit" msprop:Generator_RowDeletedName="BusinessUnitRowDeleted" msprop:Generator_RowChangedName="BusinessUnitRowChanged" msprop:Generator_RowClassName="BusinessUnitRow" msprop:Generator_RowChangingName="BusinessUnitRowChanging" msprop:Generator_RowEvArgName="BusinessUnitRowChangeEvent" msprop:Generator_RowEvHandlerName="BusinessUnitRowChangeEventHandler" msprop:Generator_TableClassName="BusinessUnitDataTable" msprop:Generator_TableVarName="tableBusinessUnit" msprop:Generator_RowDeletingName="BusinessUnitRowDeleting" msprop:Generator_TablePropName="BusinessUnit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessUnitId" msprop:Generator_UserColumnName="BusinessUnitId" msprop:Generator_ColumnVarNameInTable="columnBusinessUnitId" msprop:Generator_ColumnPropNameInRow="BusinessUnitId" msprop:Generator_ColumnPropNameInTable="BusinessUnitIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Role" msprop:Generator_UserTableName="Role" msprop:Generator_RowDeletedName="RoleRowDeleted" msprop:Generator_RowChangedName="RoleRowChanged" msprop:Generator_RowClassName="RoleRow" msprop:Generator_RowChangingName="RoleRowChanging" msprop:Generator_RowEvArgName="RoleRowChangeEvent" msprop:Generator_RowEvHandlerName="RoleRowChangeEventHandler" msprop:Generator_TableClassName="RoleDataTable" msprop:Generator_TableVarName="tableRole" msprop:Generator_RowDeletingName="RoleRowDeleting" msprop:Generator_TablePropName="Role">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleId" msprop:Generator_UserColumnName="RoleId" msprop:Generator_ColumnVarNameInTable="columnRoleId" msprop:Generator_ColumnPropNameInRow="RoleId" msprop:Generator_ColumnPropNameInTable="RoleIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="AuthorizationUserSchemaKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AuthorizationUser" />
+      <xs:field xpath="mstns:AuthorizationUserId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
